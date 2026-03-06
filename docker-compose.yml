@@ -7,10 +7,10 @@ services:
   ports: 
    - "80:80"
   volumes:
-   -./index.html:/usr/share/nginx/html/index.html
+   - ./index.html:/usr/share/nginx/html/index.html
   depends_on:
-   -redis
+   - redis
 
-redis:
- image: redis
- container_name: redis_db
+ redis:
+  image: redis
+  container_name: redis_db
